@@ -1,0 +1,27 @@
+name: background_remover
+description: Flutter package that remove background of a selfie
+version: 0.0.3
+repository: https://github.com/Antoinegtir/background-remover
+homepage: https://github.com/Antoinegtir/background-remover
+View/report issues: https://github.com/Antoinegtir/background-remover/issues
+contributing: https://github.com/Antoinegtir/background-remover/blob/main/CONTRIBUTING.md
+
+environment:
+  sdk: '>=3.0.6 <4.0.0'
+  flutter: ">=1.20.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.example.background_remover
+        pluginClass: Package
