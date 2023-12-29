@@ -3,7 +3,7 @@
 
 | Before                                                 | After
 | ----------------------------------------------------- | ---------------------------------------------------- |
-| <img src="./screenshot/before.png" width="200"/> | <img src="./screenshot/after.png" width="200"/>
+| <img src="https://firebasestorage.googleapis.com/v0/b/test-bdb24.appspot.com/o/before.png?alt=media&token=1f1787f4-1d3d-4b25-8f3e-3fd50b1db408" width="200"/> | <img src="https://firebasestorage.googleapis.com/v0/b/test-bdb24.appspot.com/o/after.png?alt=media&token=5c65be26-9f14-48fb-bb41-6e7a41de613d" width="200"/>
 
 ## Overview
 The `background_remover` package is the first Flutter plugin designed for easy integration of background removal functionality into Flutter applications. This package provides a straightforward way to pick images from the gallery and process them to remove their background.
