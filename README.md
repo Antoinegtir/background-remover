@@ -1,39 +1,57 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Background Remover
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+| Before                                                 | After
+| ----------------------------------------------------- | ---------------------------------------------------- |
+| <img src="./screenshot/before.png" width="200"/> | <img src="./screenshot/after.png" width="200"/>
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+## Overview
+The `background_remover` package is the first Flutter plugin designed for easy integration of background removal functionality into Flutter applications. This package provides a straightforward way to pick images from the gallery and process them to remove their background.
 
 ## Features
+- Image picking from gallery
+- Background removal from images
+- Display of images with and without background
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+## Getting Started
+To use the `background_remover` package, follow these steps:
 
-## Getting started
+### Installation
+Add `background_remover` to your `pubspec.yaml` file:
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  background_remover: ^1.0.0
 ```
 
-## Additional information
+### Import the Package
+Import the package along with other required packages in your Dart file:
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+```dart
+import 'package:background_remover/background_remover.dart';
+```
+
+### Usage
+Here is a basic example of how to use the `background_remover` package in a Flutter application:
+
+```dart
+Uint8List imageBytes = your image as byte;
+
+removeBackground(imageBytes: imageBytes).then((Uint8List backgroundRemoveBytes) {
+// then do whatever you want with byte of images such as display it in image.memory()..
+});
+```
+
+`removeBackground()` is the method that handles the background removal process.
+
+## Contributing
+Contributions to the `background_remover` package are welcome. Please feel free to fork the repository, make changes, and create a pull request to upgrade it.
+
+## License
+This package is licensed under the [MIT License](LICENSE).
+
+---
+
+This README provides a basic introduction to the `background_remover` package. It assumes the reader has a fundamental understanding of Flutter and Dart.
