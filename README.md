@@ -50,7 +50,7 @@ removeBackground(imageBytes: imageBytes).then((Uint8List backgroundRemoveBytes) 
 Contributions to the `background_remover` package are welcome. Please feel free to fork the repository, make changes, and create a pull request to upgrade it.
 
 ## License
-This package is licensed under the [MIT License](LICENSE).
+This package is licensed under the [Apache License](LICENSE).
 
 ---
 
