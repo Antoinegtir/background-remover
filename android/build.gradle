@@ -48,7 +48,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     //ml-kit selfie segmentation
-    implementation 'com.google.mlkit:segmentation-selfie:16.0.0-beta4'
+    implementation 'com.google.mlkit:segmentation-selfie:16.0.0-beta5'
 
     //kotlin coroutines
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
